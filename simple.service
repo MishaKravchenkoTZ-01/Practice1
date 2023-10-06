@@ -1,0 +1,14 @@
+[Unit]
+Description=First task init
+Requires=network-online.target
+After=network-online.target
+
+[Install]
+WantedBt=multi-user.target
+
+[Service]
+ExecStart=java -jar /opt/sample/service.jar
+User=mykhailo
+Restart=on-failure
+RestartSec=10
+Environment="RORT=8888"
