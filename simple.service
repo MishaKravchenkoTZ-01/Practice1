@@ -11,4 +11,4 @@ ExecStart=java -jar /opt/sample/service.jar
 User=mykhailo
 Restart=on-failure
 RestartSec=10
-Environment="RORT=8888"
+Environment="PORT=8888"
